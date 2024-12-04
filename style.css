@@ -1,0 +1,158 @@
+html {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F8F8FF;
+}
+
+.btn-search {
+  max-width: 214px;
+  width: 100%;
+  background: #846AFF;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  color: #fff;
+}
+
+span {
+  color: #846AFF;;
+}
+
+.side-one {
+  max-width: 580px;
+  width: 100%;
+}
+
+/* Container dos produtos */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 produtos por linha na versão web */
+  gap: 20px; /* Espaço entre os produtos */
+  padding: 20px; /* Espaçamento interno */
+}
+
+.product {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+
+/* Responsividade para tablet (2 produtos por linha) */
+@media (max-width: 768px) {
+  .product-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 produtos por linha no tablet */
+  }
+.header {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  align-content: center;
+}
+
+.product {
+  max-width: 300px;
+}
+
+.side-one {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.product-container {
+  justify-items: center;
+}
+
+}
+
+/* Responsividade para mobile (1 produto por linha) */
+@media (max-width: 480px) {
+  .product-container {
+    grid-template-columns: 1fr; /* 1 produto por linha no mobile */
+  }
+
+  .side-one {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .product-container {
+      justify-items: center;
+    }
+}
+
+
+/* Container do formulário */
+.contact-form-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Título do formulário */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Estilo do formulário */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Estilo dos campos de input e textarea */
+.contact-form input, 
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Estilo do botão de submit */
+.contact-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #846AFF;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  width: 523px;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
